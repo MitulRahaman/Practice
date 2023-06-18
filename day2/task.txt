@@ -1,0 +1,3 @@
+table th(table heading) td(table data) tr(table row) colspan rowspan allign
+
+5 html file with 5 friend's information, make another file named report. name, id, email, phone, img(their dp) in a table. link 5 html file with each frnd's name.
