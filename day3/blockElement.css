@@ -1,0 +1,13 @@
+body{
+    background-color: gray;
+}
+div{
+    background-color: green;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.my-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

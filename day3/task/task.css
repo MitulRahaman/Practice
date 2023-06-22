@@ -1,0 +1,254 @@
+h1{
+    text-align: center;
+    background-color: grey;
+}
+/*color*/
+
+.padding{
+    background-color: cadetblue;
+
+}
+
+.margin{
+    background-color: dodgerblue;
+}
+
+.padding h4{
+    background-color: rebeccapurple;
+}
+
+.margin h4{
+    background-color: blueviolet;
+}
+
+
+/*padding*/
+
+
+.p-4{
+    padding: 4px;
+}
+
+.px-4 {
+    padding: 0 4px;
+}
+
+.py-4 {
+    padding: 4px 0;
+}
+
+.pt-4 {
+    padding: 4px 0 0 0;
+}
+
+.pb-4 {
+    padding:  0 0 4px 0;
+}
+
+.pl-4 {
+    padding: 0 0 0 4px;
+}
+
+.pr-4 {
+    padding: 0 4px 0 0;
+}
+
+.p-6 {
+    padding: 6px;
+}
+
+.px-6 {
+    padding: 0 6px;
+}
+
+.py-6 {
+    padding: 6px 0;
+}
+
+.pt-6 {
+    padding: 6px 0 0 0;
+}
+
+.pb-6 {
+    padding: 0 0 6px 0;
+}
+
+.pl-6 {
+    padding: 0 0 0 6px;
+}
+
+.pr-6 {
+    padding: 0 6px 0 0;
+}
+
+.p-8 {
+    padding: 8px;
+}
+
+.px-8 {
+    padding: 0 8px;
+}
+
+.py-8 {
+    padding: 8px 0;
+}
+
+.pt-8 {
+    padding: 8px 0 0 0;
+}
+
+.pb-8 {
+    padding: 0 0 8px 0;
+}
+
+.pl-8 {
+    padding: 0 0 0 8px;
+}
+
+.pr-8 {
+    padding: 0 8px 0 0;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.px-10 {
+    padding: 0 10px;
+}
+
+.py-10 {
+    padding: 10px 0;
+}
+
+.pt-10 {
+    padding: 10px 0 0 0;
+}
+
+.pb-10 {
+    padding: 0 0 10px 0;
+}
+
+.pl-10 {
+    padding: 0 0 0 10px;
+}
+
+.pr-10 {
+    padding: 0 10px 0 0;
+}
+
+
+/*margin*/
+
+
+.m-4{
+    margin: 4px;
+}
+
+.mx-4 {
+    margin: 0 4px;
+}
+
+.my-4 {
+    margin: 4px 0;
+}
+
+.mt-4 {
+    margin: 4px 0 0 0;
+}
+
+.mb-4 {
+    margin: 0 0 4px 0;
+}
+
+.ml-4 {
+    margin: 0 0 0 4px;
+}
+
+.mr-4 {
+    margin: 0 4px 0 0;
+}
+
+.m-6 {
+    margin: 6px;
+}
+
+.mx-6 {
+    margin: 0 6px;
+}
+
+.my-6 {
+    margin: 6px 0;
+}
+
+.mt-6 {
+    margin: 6px 0 0 0;
+}
+
+.mb-6 {
+    margin: 0 0 6px 0;
+}
+
+.ml-6 {
+    margin: 0 0 0 6px;
+}
+
+.mr-6 {
+    margin: 0 6px 0 0;
+}
+
+.m-8 {
+    margin: 8px;
+}
+
+.mx-8 {
+    margin: 0 8px;
+}
+
+.my-8 {
+    margin: 8px 0;
+}
+
+.mt-8 {
+    margin: 8px 0 0 0;
+}
+
+.mb-8 {
+    margin: 0 0 8px 0;
+}
+
+.ml-8 {
+    margin: 0 0 0 8px;
+}
+
+.mr-8 {
+    margin: 0 8px 0 0;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.mx-10 {
+    margin: 0 10px;
+}
+
+.my-10 {
+    margin: 10px 0;
+}
+
+.mt-10 {
+    margin: 10px 0 0 0;
+}
+
+.mb-10 {
+    margin: 0 0 10px 0;
+}
+
+.ml-10 {
+    margin: 0 0 0 10px;
+}
+
+.mr-10 {
+    margin: 0 10px 0 0;
+}

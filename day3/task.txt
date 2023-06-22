@@ -1,0 +1,6 @@
+color, bg-color, font-size, font-weight, text-decoration, 
+
+.p-4(padding-4) .px-4(padding-left-right-4), .py-4(padding-top-bottom-4),  .pt-4(padding-top-4) .pb-4(padding-bottom-4) .pl-4(padding-left-4) .pr-4(padding-right-4)
+4,6,8,10
+
+total 56 class need to write in css
