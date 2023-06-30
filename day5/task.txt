@@ -1,0 +1,3 @@
+btn, btn-primary, btn-outline-primary, btn-sm, btn-lg
+
+new page with 16 product, their info, 4 product in a row, 4 row, picture, title, price, button(add to cart), pagination 
