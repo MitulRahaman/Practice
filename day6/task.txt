@@ -1,0 +1,7 @@
+
+
+
+create a customer registration form: First Name, Last Name, Email address, Phone number, Gender, Date of birth
+create a student registration form: First Name, Last Name, Email address, Department, ID, Date of birth
+create a Login form: Email address, Password
+create a Forget password form: Email address
