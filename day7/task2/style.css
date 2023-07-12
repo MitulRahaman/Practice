@@ -1,0 +1,36 @@
+
+.card:hover {
+    padding: 0 20px;
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.card-title {
+    text-decoration: none;
+}
+
+.card-body {
+    text-align: center;
+    align-items: center;
+}
+
+/*Homepage*/
+.col-md-3 {
+    width: 17.5rem;
+}
+
+/*roduct Page*/
+.col-md-6 {
+    width: 38.1rem;
+}
+
+.col-md-6 .card .btn {
+    margin: 0 210px;
+}
+.col-md-6 .card-img-top {
+    width: 400px;
+    height: 400px;
+}
+.product_name{
+    margin: 0 50px;
+}
