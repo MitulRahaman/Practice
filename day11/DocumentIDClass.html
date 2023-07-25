@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <button onclick="color_change()" class="btn btn-primary" type="button">Color Change</button>
+    <button onclick="varsity_name()" class="btn btn-primary" type="button">College Name</button>
+    <h1 id="varsity_name" class="text-info">My varsity name: AUST</h1>
+
+    <script>
+
+        function varsity_name() {
+            var varsity_info = document.getElementById('varsity_name');
+            if (varsity_info.info == true) {
+                varsity_info.info = false
+                varsity_info.innerText = 'My University Name: AUST';
+            }
+
+            else {
+                varsity_info.info = true;
+                varsity_info.innerText = 'My College Name: Govt. Technical College';
+            }
+        }
+
+        function color_change() {
+            var varsity_color = document.getElementById('varsity_name');
+            if (varsity_color.info == false) {
+                varsity_color.info = true
+                varsity_color.className = 'text-danger';
+            }
+
+            else {
+                varsity_color.info = false;
+                varsity_color.className = 'text-info';
+            }
+        }
+
+    </script> 
+
+           
+</body>
+</html>
