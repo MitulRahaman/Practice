@@ -1,0 +1,154 @@
+<html>
+<head>
+    <title>Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                        <div class="invalid-feedback">
+                            Please fillup name field.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputAge" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="exampleInputAge" aria-describedby="emailHelp">
+                        <div class="invalid-feedback">
+                            Please fillup age field.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail">
+                        <div class="invalid-feedback">
+                            Please fillup email field.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputNumber" class="form-label">Phone</label>
+                        <input type="number" class="form-control" id="exampleInputNumber">
+                        <div class="invalid-feedback">
+                            Please fillup number field.
+                        </div>
+                    </div>
+                    <button onclick="add_student()" type="button" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+
+        </div>
+        <button onclick="add_student_last()" class="btn btn-primary" type="button">Add Student Last</button>
+        <button onclick="add_student_first()" class="btn btn-primary" type="button">Add Student First</button>
+        <div class="row">
+            <table id="table" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="student_list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var students = [
+            { name: "Pluto", age: 44, email: "pluto@mail.com", phone: "01709090909" },
+            { email: "pluto1@mail.com", name: "Pluto1", age: 45, phone: "01809090909" },
+            { age: 45, email: "pluto2@mail.com", name: "Pluto2", phone: "+8801709090909" }
+        ]
+
+        const prepare = e => {
+            return "<tr><td>" + e.name + "</td><td>" + e.age + "</td><td>" + e.email + "</td><td>" + e.phone + "</td></tr>";
+        };
+
+        const addDataToTable = () => {
+            return document.getElementById("student_list").innerHTML = students.join(' ');
+        };
+
+        students.forEach((e, i) => {
+            students[i] = prepare(e);
+        });
+        addDataToTable();
+         
+        const add_student_last = () => {
+            var newStudent = {
+                name: "Pluto3", age: 48, email: "pluto3@mail.com", phone: "+880001709090909"
+            }
+            students.push(prepare(newStudent));
+            addDataToTable();
+        };
+
+        const add_student_first = () => {
+            var newStudent = {
+                name: "Pluto3", age: 48, email: "pluto3@mail.com", phone: "+880001709090909"
+            }
+            students.unshift(prepare(newStudent));
+            addDataToTable();
+        };
+
+        const add_student = () => {
+            var newStudent = {
+                name: document.getElementById("exampleInputName").value,
+                age: document.getElementById("exampleInputAge").value,
+                email: document.getElementById("exampleInputEmail").value,
+                phone: document.getElementById("exampleInputNumber").value
+            }
+            if (document.getElementById("exampleInputName").value == '' || 
+                document.getElementById("exampleInputAge").value == '' ||
+                document.getElementById("exampleInputEmail").value == '' ||
+                document.getElementById("exampleInputNumber").value == '') {
+
+                    if (document.getElementById("exampleInputName").value == '') {
+                        document.getElementById("exampleInputName").classList.add("is-invalid");
+                    }
+                    else {
+                        document.getElementById("exampleInputName").classList.add("is-valid");
+                    }
+
+                    if (document.getElementById("exampleInputAge").value == '') {
+                        document.getElementById("exampleInputAge").classList.add("is-invalid");
+                    }
+                    else {
+                        document.getElementById("exampleInputAge").classList.add("is-valid");
+                    }
+
+                    if (document.getElementById("exampleInputEmail").value == '') {
+                        document.getElementById("exampleInputEmail").classList.add("is-invalid");
+                        
+                    }
+                    else {
+                        document.getElementById("exampleInputEmail").classList.add("is-valid");
+                    }
+                    if (document.getElementById("exampleInputNumber").value == '') {
+                        document.getElementById("exampleInputNumber").classList.add("is-invalid");
+                    }
+                    else {
+                        document.getElementById("exampleInputNumber").classList.add("is-valid");
+                    }
+            }
+
+            else {
+                students.push(prepare(newStudent));
+                addDataToTable();
+                document.getElementById("exampleInputName").value = '',
+                document.getElementById("exampleInputAge").value = '',
+                document.getElementById("exampleInputEmail").value = '',
+                document.getElementById("exampleInputNumber").value = ''
+            }
+        };
+
+    </script> 
+
+</body>
+</html>
